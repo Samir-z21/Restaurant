@@ -1,0 +1,26 @@
+:root {
+    --topBar: 220px;
+    --footer: 20px;
+    --main: calc(100vh - calc(var(--topBar) + var(--footer)));
+}
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 1fr 2fr / 1fr ;
+}
+
+.topBar {
+    grid-row: 1-3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: var(--topBar);
+    color: white;
+}
+
