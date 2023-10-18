@@ -4,6 +4,11 @@
     --main: calc(100vh - calc(var(--topBar) + var(--footer)));
 }
 
+@font-face {
+    font-family: "Tangerine";
+    src: url(./Tangerine.ttf) format('ttf');
+}
+
 
 body {
     padding: 0px;
@@ -19,8 +24,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: black;
     height: var(--topBar);
     color: white;
+    font-family: "Tangerine", sans-serif;
+    font-size: 50px;
 }
 
+.navigation-links {
+    display: flex;
+    justify-self: flex-end;
+    font-size: 20px;
+    gap: 20px;
+}
