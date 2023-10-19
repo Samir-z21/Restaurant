@@ -80,12 +80,14 @@ body {
     height: 600px;
 }
 
+
 .homePageContent {
-    font-family: cadasd;
+   
     font-size: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     
 }
 

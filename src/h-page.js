@@ -1,5 +1,5 @@
 import loadContent from './default';
-
+import pizzaPic from './hp-Pizza.png'
 
 function homePage () {
     const homePageContainer = document.createElement('div');
@@ -22,11 +22,16 @@ function homePage () {
     introText.appendChild(madePassion);
 
     homePageContent.appendChild(introText);
+    
+    // pizza Pic display
+    const pizza = new Image();
+    pizza.src = pizzaPic;
+
+    homePageContent.appendChild(pizza);
+
     homePageContainer.appendChild(homePageContent);
 
     
-
-
     return homePageContainer 
 }
 
