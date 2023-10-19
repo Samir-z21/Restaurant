@@ -1,6 +1,7 @@
 import './style.css';
 
-const loadContent = currentPage => {
+function loadContent ( currentContainer)  {
+    const body = document.body
     const content = document.getElementById('content');
 
     //header display
@@ -32,14 +33,8 @@ const loadContent = currentPage => {
 
 
     // content display
-    const contentContainer = document.createElement('div');
-    contentContainer.classList.add('contentContainer');
-    
-    const bestPizza = document.createElement('div');
-  
-
-    content.appendChild(contentContainer);
-    
+   
+    content.appendChild(currentContainer);
     
     // footer display
     const footer = document.createElement('div');
@@ -50,14 +45,8 @@ const loadContent = currentPage => {
     body.appendChild(header);
     body.appendChild(content);
     body.appendChild(footer);
-  
-    // 
-    const getHeader = () => header;
-    const getContent = () => currentPage;
-    const getFooter = () => footer
-
-    return {getHeader, getContent, getFooter}
-
 };
+
+
 
 export default loadContent;

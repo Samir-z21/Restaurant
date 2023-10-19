@@ -1,56 +1,40 @@
-import './style.css';
+import loadContent from './default';
 
-function loadContent () {
-    const body = document.body;
-    const content = document.getElementById('content');
 
-    //header display
-    const header = document.createElement('div');
-    const siteName = document.createElement('div');
+function homePage () {
+    const homePageContainer = document.createElement('div');
+    homePageContainer.classList.add('homePageContainer','allContainer');
     
-    siteName.textContent = "Pizzeria"
-    siteName.classList.add('siteName')
-    
-    const navigationLinks = document.createElement('div');
+    const homePageContent = document.createElement("div");
+    homePageContent.classList.add('homePageContent');
 
-    const Home = document.createElement('div');
-    const Menu = document.createElement('div');
-    const Contact = document.createElement('div');
+    const introText = document.createElement('div');
+    introText.classList.add('introText')
 
-    Home.textContent = "Home";
-    Menu.textContent = "Menu";
-    Contact.textContent = "Contact"
-
-    header.classList.add('header');
-    navigationLinks.classList.add('navigation-links');
-
-    navigationLinks.appendChild(Home);
-    navigationLinks.appendChild(Menu);
-    navigationLinks.appendChild(Contact);
-
-    header.appendChild(siteName)
-    header.appendChild(navigationLinks);
-
-
-    // content display
-    const contentContainer = document.createElement('div');
-    contentContainer.classList.add('contentContainer');
-    
     const bestPizza = document.createElement('div');
-  
+    bestPizza.textContent = "Best pizza in your country";
 
-    content.appendChild(contentContainer);
+    const madePassion = document.createElement('div');
+    madePassion.textContent = "Made with passion since 1908";
+
     
+    introText.appendChild(bestPizza);
+    introText.appendChild(madePassion);
+
+    homePageContent.appendChild(introText);
+    homePageContainer.appendChild(homePageContent);
+
     
-    // footer display
-    const footer = document.createElement('div');
-    footer.textContent = "template from michalosman";
-    footer.classList.add('footer');
 
-    // append everything to bddy
-    body.appendChild(header);
-    body.appendChild(content);
-    body.appendChild(footer);
-};
 
-export default loadContent
+    return homePageContainer 
+}
+
+
+
+function loadHomePage () {
+    loadContent(homePage())
+}
+
+
+export default loadHomePage

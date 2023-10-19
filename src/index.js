@@ -1,13 +1,13 @@
-import loadContent from './h-page';
-//import homePage from './h-page'
-// import loadContent from './default';
+import loadHomePage from './h-page';
+
+//import loadContent from './default';
 
 
 
 
-//let currentPage = homePage()
 
-loadContent()
+
+loadHomePage()
 
 console.log("Ddd it ork?");
 
