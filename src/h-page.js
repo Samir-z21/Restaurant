@@ -47,9 +47,7 @@ function homePage () {
 
 
 
-function loadHomePage () {
-    loadContent(homePage())
-}
 
 
-export default loadHomePage
+
+export default homePage

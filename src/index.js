@@ -1,11 +1,26 @@
-import loadHomePage from './h-page';
-
+import homePage from './h-page';
+//import menuPage from './menu';
+//import contactPage from './contact'; 
 import loadContent from './default';
 
-const links = loadContent(); 
-console.log(links.getContact())
+const links = loadContent(homePage()); 
 
-loadHomePage()
+links.getHome().addEventListener('click', () => {
+    loadContent(homePage()); 
+});
+
+links.getMenu().addEventListener('click', () => {
+    console.log("Hey")
+});
+
+links.getContact().addEventListener('click', () => {
+    console.log("Hey")
+});
+
+console.log(links.getHome())
+
+
+
 
 
 

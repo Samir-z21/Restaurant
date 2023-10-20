@@ -44,9 +44,8 @@ function loadContent (currentContainer)  {
     const getContact = () => Contact
 
 
-    // This is just the first execution to return these functions without making any changes to default display. 
-    if(!currentContainer) return {getHome, getMenu, getContact}
-
+    // This is just the first execution to return these functions without making adding any display
+    
 
     // content display
      // remove previous child if any 
@@ -59,6 +58,9 @@ function loadContent (currentContainer)  {
     body.appendChild(header);
     body.appendChild(content);
     body.appendChild(footer);
+
+    return {getHome, getMenu, getContact}
+
 };
 
 

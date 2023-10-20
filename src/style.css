@@ -49,6 +49,7 @@ body {
 
 
 .navigation-links {
+    
     display: flex;
     margin-bottom: 30px;
     font-size: 23px;
@@ -56,6 +57,9 @@ body {
     font-family: var(--default-font)
 }
 
+.navigation-links div {
+    cursor: pointer;
+}
 
 /*contentStyle*/
 #content {
