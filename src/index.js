@@ -1,13 +1,11 @@
 import loadHomePage from './h-page';
 
-//import loadContent from './default';
+import loadContent from './default';
 
-
-
-
-
+const links = loadContent(); 
+console.log(links.getContact())
 
 loadHomePage()
 
-console.log("Ddd it ork?");
+
 

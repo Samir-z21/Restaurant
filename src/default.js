@@ -1,6 +1,6 @@
 import './style.css';
 
-function loadContent ( currentContainer)  {
+function loadContent (currentContainer)  {
     const body = document.body
     const content = document.getElementById('content');
 
@@ -31,10 +31,7 @@ function loadContent ( currentContainer)  {
     header.appendChild(siteName)
     header.appendChild(navigationLinks);
 
-
-    // content display
    
-    content.appendChild(currentContainer);
     
     // footer display
     const footer = document.createElement('div');
@@ -42,6 +39,23 @@ function loadContent ( currentContainer)  {
     footer.classList.add('footer');
 
 
+    const getHome = () => Home;
+    const getMenu = () => Menu;
+    const getContact = () => Contact
+
+
+    // This is just the first execution to return these functions without making any changes to default display. 
+    if(!currentContainer) return {getHome, getMenu, getContact}
+
+
+    // content display
+     // remove previous child if any 
+     let childDiv = content.querySelector('div');
+     if (childDiv) content.removeChild(childDiv);
+
+    content.appendChild(currentContainer);
+
+    // append theses divs to body
     body.appendChild(header);
     body.appendChild(content);
     body.appendChild(footer);
@@ -49,4 +63,7 @@ function loadContent ( currentContainer)  {
 
 
 
+
+
 export default loadContent;
+

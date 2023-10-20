@@ -20,6 +20,7 @@ body {
     width: 100vw;
     background-image: url(./pizzaBackground.jpg);
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
