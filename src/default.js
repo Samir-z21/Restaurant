@@ -38,7 +38,7 @@ function loadContent ( currentContainer)  {
     
     // footer display
     const footer = document.createElement('div');
-    footer.textContent = "template from michalosman";
+    footer.textContent = "Template from Michalosman";
     footer.classList.add('footer');
 
 

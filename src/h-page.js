@@ -28,6 +28,15 @@ function homePage () {
     pizza.src = pizzaPic;
 
     homePageContent.appendChild(pizza);
+    pizza.classList.add('pizza');
+
+    // order now text
+    const orderText = document.createElement('div');
+    orderText.textContent = "Order online or visit us!";
+
+    homePageContent.appendChild(orderText)
+
+
 
     homePageContainer.appendChild(homePageContent);
 
