@@ -1,15 +1,11 @@
-import loadContent from './default';
-import pizzaPic from './hp-Pizza.png'
+//import loadContent from './default';
+import pizzaPic from './images/hp-Pizza.png'
 
 function homePage () {
     // check if there is a child div 
-    
-
     const homePageContainer = document.createElement('div');
     homePageContainer.classList.add('homePageContainer','allContainer');
     
-    const homePageContent = document.createElement("div");
-    homePageContent.classList.add('homePageContent');
     
     const introText = document.createElement('div');
     introText.classList.add('introText')
@@ -24,22 +20,20 @@ function homePage () {
     introText.appendChild(bestPizza);
     introText.appendChild(madePassion);
 
-    homePageContent.appendChild(introText);
+    homePageContainer.appendChild(introText);
     
     // pizza Pic display
     const pizza = new Image();
     pizza.src = pizzaPic;
 
-    homePageContent.appendChild(pizza);
+    homePageContainer.appendChild(pizza);
     pizza.classList.add('pizza');
 
     // order now text
     const orderText = document.createElement('div');
     orderText.textContent = "Order online or visit us!";
-    homePageContent.appendChild(orderText)
+    homePageContainer.appendChild(orderText)
 
-    // Load Content to container
-    homePageContainer.appendChild(homePageContent);
 
     
     return homePageContainer 
