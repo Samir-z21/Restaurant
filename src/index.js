@@ -12,7 +12,6 @@ links.getHome().addEventListener('click', () => {
 
 links.getMenu().addEventListener('click', () => {
     loadContent(menuPage()); 
-    console.log("Hey")
 });
 
 links.getContact().addEventListener('click', () => {

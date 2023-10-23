@@ -34,8 +34,6 @@ function homePage () {
     orderText.textContent = "Order online or visit us!";
     homePageContainer.appendChild(orderText)
 
-
-    
     return homePageContainer 
 }
 

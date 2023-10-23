@@ -56,7 +56,6 @@ function loadContent (currentContainer) {
      if (childDiv) content.removeChild(childDiv);
 
     content.appendChild(currentContainer);
-    console.log("hey")
 }
 
 
