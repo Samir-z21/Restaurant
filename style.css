@@ -8,10 +8,6 @@
     display: none;
 }
 
-@font-face {
-    font-family: "Tangerine";
-    src: url('../src/Tangerine.ttf') format('ttf');
-}
 
 
 body {
@@ -43,8 +39,8 @@ body {
 }
 
 .siteName {
-    font-family: "Tangerine", sans-serif;
-    font-size: 80px;
+    font-family: 'Tangerine', cursive;
+    font-size: 100px;
     margin: 30px;
 }
 
