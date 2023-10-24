@@ -11,7 +11,7 @@ function contactPage () {
     address.textContent = "🏠 Hollywood Boulevard 42, Los Angeles, USA";
     
     const map = document.createElement('img');
-    map.src = './dist/images/restaurant-location.png'
+    map.src = 'images/restaurant-location.png'
     map.alt = 'restaurant location'
     
     
