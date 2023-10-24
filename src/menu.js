@@ -33,7 +33,7 @@ function loadMenu () {
     cardTitle.classList.add('cardTitle');
 
     const cardImg = document.createElement('img');
-    cardImg.src = `../dist/images/pizzas/${pizzaNames[i].toLowerCase()}.png`;
+    cardImg.src = `./dist/images/pizzas/${pizzaNames[i].toLowerCase()}.png`;
     cardImg.alt = pizzaNames[i];
     cardImg.classList.add('cardImg')
 
