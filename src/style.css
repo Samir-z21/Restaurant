@@ -1,6 +1,7 @@
 :root {
     --divTransparent: 0.7;
-    --default-font: sans-serif
+    --default-font: sans-serif;
+    --box-shadow: 1px 1px 15px -10px white
 }
 
 ::-webkit-scrollbar {
@@ -9,7 +10,7 @@
 
 @font-face {
     font-family: "Tangerine";
-    src: url(./Tangerine.ttf) format('ttf');
+    src: url('./Tangerine.ttf') format('ttf');
 }
 
 
@@ -33,12 +34,12 @@ body {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9);
     height: 200px;
     width: 100%;
     color: white;
     margin: 0px;
-    
+    box-shadow: var(--box-shadow);
 }
 
 .siteName {
@@ -47,18 +48,25 @@ body {
     margin: 30px;
 }
 
-
 .navigation-links {
-    
     display: flex;
     margin-bottom: 30px;
     font-size: 23px;
-    gap: 20px;
+    gap: 35px;
     font-family: var(--default-font)
+}
+
+.underline {
+    border-bottom: 1px solid white;
 }
 
 .navigation-links div {
     cursor: pointer;
+}
+
+.navigation-links div:hover {
+    position: relative;
+    bottom: 5px;
 }
 
 /*contentStyle*/
@@ -74,21 +82,20 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     margin: 50px;
     color: white;
-   
+    box-shadow: var(--box-shadow);
 }
 
 
 /*Home page styling*/
 .homePageContainer{ 
     width: 650px;
+    height: 500px;
     padding: 50px;
-    height: 550px;
     font-size: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between; 
-    height: 550px;
 }
 
 
@@ -116,7 +123,7 @@ body {
 .card {
     padding: 35px;
     width: 230px;
-    background-color: rgba(0, 0, 0, 0.78);
+    background-color: rgba(0, 0, 0, 0.76);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,14 +153,40 @@ body {
 }
 
 
+/*contact styling*/
+.contactContainer {
+    width: 650px;
+    height: 500px;
+    padding: 50px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactContainer img {
+    height: 400px;
+}
+
+
 /*footer styling*/
 .footer {
-    width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 17px;
-    
+    gap: 6px;
+    font-size: 18px;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
 }
+
+.footer a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
+
+

@@ -1,5 +1,7 @@
 import './style.css';
 
+
+// loading default page
 function loadPage ()  {
     const body = document.body
     //header display
@@ -14,6 +16,8 @@ function loadPage ()  {
     const Home = document.createElement('div');
     const Menu = document.createElement('div');
     const Contact = document.createElement('div');
+
+    Home.classList.add('underline')
 
     Home.textContent = "Home";
     Menu.textContent = "Menu";
@@ -35,18 +39,27 @@ function loadPage ()  {
     
     // footer display
     const footer = document.createElement('div');
-    footer.textContent = "Template from Michalosman";
+    footer.textContent = `Template from`;
     footer.classList.add('footer');
+
+    const Michalosman = document.createElement('a');
+    Michalosman.href = 'https://github.com/michalosman';
+    Michalosman.textContent = "Michalosman";
+
+    footer.appendChild(Michalosman);
 
     // append theses divs to body
     body.appendChild(header);
     body.appendChild(content);
     body.appendChild(footer);
 
+    // return links
     return {getHome, getMenu, getContact}
 
 };
 
+
+// function changing between pages
 function loadContent (currentContainer) {
     const content = document.getElementById('content');
 
@@ -59,5 +72,5 @@ function loadContent (currentContainer) {
 }
 
 
-export  {loadPage, loadContent}
+export {loadPage, loadContent}
 
