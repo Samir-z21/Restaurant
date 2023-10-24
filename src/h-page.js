@@ -1,5 +1,5 @@
 //import loadContent from './default';
-import pizzaPic from './images/hp-Pizza.png'
+import pizzaPic from '../dist/images/hp-Pizza.png'
 
 function homePage () {
     // check if there is a child div 

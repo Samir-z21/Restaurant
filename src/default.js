@@ -1,6 +1,3 @@
-import './style.css';
-
-
 // loading default page
 function loadPage ()  {
     const body = document.body

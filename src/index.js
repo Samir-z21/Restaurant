@@ -1,4 +1,5 @@
 //imports 
+import '../dist/style.css';
 import {loadPage, loadContent} from './default';
 import homePage from './h-page';
 import menuPage from './menu';
